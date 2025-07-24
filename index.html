@@ -1,8 +1,61 @@
 <!DOCTYPE html>
-<header>
+<html lang="ja">
+<head>
   <meta charset="UTF-8">
-  <title>clever-elsie.github.io</title>
-</header>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clever Elsie Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
 <body>
-  工事予定
+  <div id="header"></div>
+  <main>
+    <section id="about">
+      <h2>自己紹介</h2>
+      <p>
+        広島大学情報科学部3年生．<br>
+        競技プログラミングの環境やライブラリ，その他小さなツールを公開しています．<br>
+        cptはコンパイラを実装してみようと思って，簡単な電卓にしたら，電卓なら別にインタプリタでいいじゃんとなった妥協の産物です．<br>
+        まだ公開できるレベルではないのでprivateですがCrowCppを使ったローカルのファイルサーバーでのメディア閲覧ができるシステムを作って使ってたり，多分メモリ管理がダメで動かない自作OSの塩漬けリポジトリがあったりします．<br>
+        コンパイラとかOSとか興味はあるんですが，全部オレオレ実装したくなって無限に時間が溶けてダメです．<br>
+        ネットワークとか暗号とかも興味はあるんですが，まったく手が付けられておらず……<br>
+      </p>
+      <ul>
+        <li>得意分野: 水色レベルの競プロ，C++(上級者ではない)</li>
+        <li>GitHub: <a href="https://github.com/clever-elsie" target="_blank">clever-elsie</a></li>
+        <li>AtCoder: <a href="https://atcoder.jp/users/CleverElsie" target="_blank">CleverElsie</a>（水色，最近はほぼやってない）</li>
+      </ul>
+    </section>
+    <section id="projects">
+      <h2>プロジェクト一覧</h2>
+      <div class="card-list">
+        <a class="card" href="repositories/lib_Clever_Elsie.html">
+          <h3>lib_Clever_Elsie</h3>
+          <p>競技プログラミング用ライブラリ集．データ構造がメインでそれ以外は割とおまけ．妙に丁寧なドキュメントがあるやつはこだわって作ったやつで，それ以外は割と適当．適当なやつだとmiscに入っている競プロ用のエイリアスが前提になっているままだったりするので，普通の環境で使えるのはドキュメントが丁寧なやつだけかもしれない．あとで直す．</p>
+        </a>
+        <a class="card" href="repositories/work.html">
+          <h3>work</h3>
+          <p>競プロ用の環境で，作りかけのコードの実験場になったりもする．makeとbashのエイリアスで1文字コマンドを乱用するので競プロ用と割り切らないと使えたものではない．ライブラリの自動展開をできるようになっているのでlib_Clever_Elsieを使ってAtCoderに提出するときなどは便利．</p>
+        </a>
+        <a class="card" href="repositories/HU_syllabus_scan.html">
+          <h3>HU_syllabus_scan</h3>
+          <p>
+            広島大学のシラバス情報を自動取得・解析するツール．
+            CLIでシラバスの情報を見たい時に使う．仕様機会はほとんどない．
+          </p>
+        </a>
+        <a class="card" href="repositories/cpt.html">
+          <h3>cpt</h3>
+          <p>
+            数式を入力すると計算してくれる電卓．
+            数式の表現力が高く，LaTeX風の $\sum,\prod$ もサポートしている．
+            変数宣言や論理演算，条件分岐も可能．
+            インタプリタ型で動作するため，とても大きな式の計算において実行速度には期待できないが，桁数はデカいのでWindows標準よりはマシかもしれない．
+          </p>
+        </a>
+      </div>
+    </section>
+  </main>
+  <div id="footer"></div>
+  <script src="/assets/include.js"></script>
 </body>
+</html>

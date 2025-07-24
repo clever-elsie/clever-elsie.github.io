@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>lib_Clever_Elsie | Clever Elsie Portfolio</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <div id="header"></div>
+  <main>
+    <section>
+      <h2>lib_Clever_Elsie</h2>
+      <p>
+        競技プログラミング用のC++ライブラリ集．
+        データ構造，グラフ，幾何，数学，文字列など手広くあるように見えて実はデータ構造と多少の数学がメインでそれ以外は微妙．<br>
+        <strong>テンプレート化による汎用的な型での表現力</strong>を中心に，やらないよりマシ程度のコンパイル時計算による最適化を行って便利に使えるようにしている．
+        <strong>C++20以降の新しい規格（concept等）</strong>を多用している．<br>
+        そのため，<strong>新しめのC++コンパイラ環境が必要</strong>．<br>
+        頻繁に更新されているため，実装詳細はリポジトリやREADMEをご参照．
+      </p>
+      <ul>
+        <li>主な内容: データ構造，グラフアルゴリズム，幾何計算，数論，文字列処理，その他</li>
+        <li>MITライセンス</li>
+        <li>GitHub: <a href="https://github.com/clever-elsie/lib_Clever_Elsie" target="_blank">lib_Clever_Elsie</a></li>
+      </ul>
+      <h3>特徴</h3>
+      <ul>
+        <li>テンプレート化による高い汎用性と標準ライブラリっぽいインタフェース(一部のみ)</li>
+        <li>conceptやconstexprなどC++20以降の機能を積極的に活用</li>
+        <li>多少のコンパイル時計算による最適化を意識した設計</li>
+        <li>競技プログラミングでの使いやすさ・拡張性を重視．TRIE木なんかは書き換える前提なのでちょっと微妙だけど．</li>
+        <li>型エイリアスや命名規則はmiscのやつを元々使ってたけど，徐々に安全に変更中</li>
+      </ul>
+      <h3>注意事項</h3>
+      <ul>
+        <li>g++-14とかの新しいコンパイラで-std=gnu++23とかでコンパイルする必要あり．</li>
+        <li>最近そうでもないけどそこそこ更新しているので，READMEから辿れるドキュメントがあるやつを見てください．ドキュメントが無いやつは工事中です．</li>
+        <li>elsie::mapとかは順序を得られるけど，ext/pb_dsのpbds::treeと実行速度も変わらないので，別に使う意味はない</li>
+      </ul>
+      <h3>使い方例</h3>
+      <pre><code>// 例: Union-Findの利用
+#include "dtStrc/union_find.hpp"
+
+UnionFind uf(N);
+uf.unite(0, 1);
+bool same = uf.same(0, 1);
+</code></pre>
+    </section>
+  </main>
+  <div id="footer"></div>
+  <script src="/assets/include.js"></script>
+</body>
+</html> 
