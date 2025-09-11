@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jpp | Clever Elsie Portfolio</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+  <div id="header"></div>
+  <main>
+    <section>
+      <h2>jpp</h2>
+      <p>
+        jppは自作JSONライブラリです．  
+        cptを書いてるときに構造化文書のパーサも書いてみたいと思ったので書いただけで，普通にnlohmann/jsonなんかを使った方がいいと思います．
+      </p>
+      
+      <h3>主な特徴</h3>
+      <ul>
+        <li><code>json::value</code> クラスを使用した直感的なJSON値の表現（<code>Null</code>、<code>Boolean</code>、<code>Number</code>、<code>String</code>、<code>Array</code>、<code>Object</code> に対応）</li>
+        <li>文字列化およびパース機能（<code>\uXXXX</code> サロゲートペアから UTF-8 への変換を含む）</li>
+        <li>各種コンテナや文字列型からの容易な構築（<code>u8</code> 系も含む）</li>
+        <li>テストランナーによる入出力の自動検証</li>
+      </ul>
+      
+      <h3>ドキュメント</h3>
+      <ul>
+        <li>API の詳細は <code>docs/include.md</code> に記載されています</li>
+        <li>ツールの概要は <code>docs/src.md</code> を参照してください</li>
+      </ul>
+      
+      <h3>テストの実行方法</h3>
+      <ol>
+        <li>テストケースを <code>test/cases/*.json</code> に配置します</li>
+        <li>以下のコマンドでビルドおよび実行します：
+          <pre><code>g++ -std=c++20 -O2 -Iinclude src/test_runner.cpp -o test_runner
+./test_runner           # 比較
+./test_runner --update  # 期待値更新</code></pre>
+        </li>
+      </ol>
+      
+      <ul>
+        <li>GitHub: <a href="https://github.com/clever-elsie/jpp" target="_blank">jpp</a></li>
+      </ul>
+    </section>
+  </main>
+  <div id="footer"></div>
+  <script src="/assets/include.js"></script>
+</body>
+</html>
