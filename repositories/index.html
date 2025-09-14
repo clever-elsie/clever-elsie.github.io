@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>リポジトリ一覧 | Clever Elsie Portfolio</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <div id="header"></div>
+  <main>
+    <section>
+      <h2>リポジトリ一覧</h2>
+      <p>GitHubで公開しているプロジェクトの一覧と詳細情報を表示しています。</p>
+      
+      <div class="card-list">
+        <a class="card" href="lib_Clever_Elsie.html">
+          <h3>lib_Clever_Elsie</h3>
+          <p>競技プログラミング用ライブラリ集．データ構造がメインでそれ以外は割とおまけ．妙に丁寧なドキュメントがあるやつはこだわって作ったやつで，それ以外は割と適当．適当なやつだとmiscに入っている競プロ用のエイリアスが前提になっているままだったりするので，普通の環境で使えるのはドキュメントが丁寧なやつだけかもしれない．あとで直す．</p>
+        </a>
+        
+        <a class="card" href="work.html">
+          <h3>work</h3>
+          <p>競プロ用の環境で，作りかけのコードの実験場になったりもする．makeとbashのエイリアスで1文字コマンドを乱用するので競プロ用と割り切らないと使えたものではない．ライブラリの自動展開をできるようになっているのでlib_Clever_Elsieを使ってAtCoderに提出するときなどは便利．</p>
+        </a>
+        
+        <a class="card" href="HU_syllabus_scan.html">
+          <h3>HU_syllabus_scan</h3>
+          <p>広島大学のシラバス情報を自動取得・解析するツール．CLIでシラバスの情報を見たい時に使う．仕様機会はほとんどない．</p>
+        </a>
+        
+        <a class="card" href="cpt.html">
+          <h3>cpt</h3>
+          <p>数式を入力すると計算してくれる電卓．数式の表現力が高く，LaTeX風の $\sum,\prod$ もサポートしている．変数宣言や論理演算，条件分岐も可能．インタプリタ型で動作するため，とても大きな式の計算において実行速度には期待できないが，桁数はデカいのでWindows標準よりはマシかもしれない．</p>
+        </a>
+        
+        <a class="card" href="jpp.html">
+          <h3>jpp</h3>
+          <p>JSONライブラリ．構造化文書パーサの練習．</p>
+        </a>
+      </div>
+    </section>
+  </main>
+  <div id="footer"></div>
+  <script src="/assets/include.js"></script>
+</body>
+</html>

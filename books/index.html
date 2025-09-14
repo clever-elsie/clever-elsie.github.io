@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>読書記録 | Clever Elsie Portfolio</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="books.css">
+</head>
+<body>
+  <div id="header"></div>
+  <main>
+    <section>
+      <h2>読書記録</h2>
+      <p>読んだ本の記録を管理しています。ジャンルを選択して本を探すか、検索ボックスで直接検索してください。検索ではAND/OR/NOT演算子が使用できます。</p>
+      
+      <!-- 検索機能 -->
+      <div class="books-controls">
+        <div class="search-container">
+          <input type="text" id="search-input" placeholder="例: 競技プログラミング AND 既読, 数学 OR 統計, 未読 NOT 哲学" class="search-input">
+        </div>
+      </div>
+      
+      <!-- 階層選択エリア -->
+      <div id="selection-container" class="selection-container">
+        <!-- ジャンル選択 -->
+        <div id="genre-selection" class="selection-section">
+          <h3>ジャンルを選択してください</h3>
+          <div id="genre-list" class="genre-list">
+            <p>読み込み中...</p>
+          </div>
+        </div>
+        
+        <!-- カテゴリ選択 -->
+        <div id="category-selection" class="selection-section" style="display: none;">
+          <h3>カテゴリを選択してください</h3>
+          <button id="back-to-genre" class="back-btn">← ジャンルに戻る</button>
+          <div id="category-list" class="category-list"></div>
+        </div>
+        
+        <!-- 本選択 -->
+        <div id="book-selection" class="selection-section" style="display: none;">
+          <h3>本を選択してください</h3>
+          <button id="back-to-category" class="back-btn">← カテゴリに戻る</button>
+          <div id="book-list" class="book-list"></div>
+        </div>
+      </div>
+      
+      <!-- 本の詳細モーダル -->
+      <div id="book-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div id="book-detail"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="footer"></div>
+  <script src="/assets/include.js"></script>
+  <script src="books.js"></script>
+</body>
+</html>

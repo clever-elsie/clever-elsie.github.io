@@ -1,0 +1,577 @@
+/* 読書記録システム用のCSS */
+
+/* 階層選択コンテナ */
+.selection-container {
+    margin-top: 2rem;
+}
+
+.selection-section {
+    min-height: 400px;
+}
+
+.selection-section h3 {
+    margin-bottom: 1.5rem;
+    color: #495057;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* 戻るボタン */
+.back-btn {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    transition: background-color 0.15s ease-in-out;
+}
+
+.back-btn:hover {
+    background-color: #5a6268;
+}
+
+/* ジャンル一覧 */
+.genre-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.genre-item {
+    background-color: white;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    padding: 1.5rem;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+    text-align: center;
+}
+
+.genre-item:hover {
+    border-color: #007bff;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.15);
+    transform: translateY(-2px);
+}
+
+.genre-item h4 {
+    margin: 0 0 0.5rem 0;
+    color: #212529;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.genre-item p {
+    margin: 0;
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+/* カテゴリ一覧 */
+.category-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.category-item {
+    background-color: white;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    padding: 1rem;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+    text-align: center;
+}
+
+.category-item:hover {
+    border-color: #28a745;
+    box-shadow: 0 4px 8px rgba(40, 167, 69, 0.15);
+    transform: translateY(-2px);
+}
+
+.category-item h4 {
+    margin: 0 0 0.5rem 0;
+    color: #212529;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.category-item p {
+    margin: 0;
+    color: #6c757d;
+    font-size: 0.8rem;
+}
+
+/* 本一覧 */
+.book-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.book-item {
+    background-color: white;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 1rem;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+}
+
+.book-item:hover {
+    border-color: #007bff;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.15);
+    transform: translateY(-2px);
+}
+
+.book-item .book-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.75rem;
+    gap: 1rem;
+}
+
+.book-item .book-title {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #212529;
+    line-height: 1.3;
+    flex: 1;
+}
+
+.book-item .book-status {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.book-item .book-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    font-size: 0.8rem;
+    color: #6c757d;
+}
+
+/* モーダル */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.modal-content {
+    background-color: white;
+    margin: 5% auto;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 600px;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+    animation: slideIn 0.3s ease-in-out;
+}
+
+@keyframes slideIn {
+    from { 
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to { 
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.close {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: #aaa;
+    line-height: 1;
+}
+
+.close:hover {
+    color: #000;
+}
+
+/* 本の詳細表示 */
+.book-detail-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+    gap: 1rem;
+}
+
+.book-detail-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #212529;
+    flex: 1;
+}
+
+.book-detail-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    font-size: 0.9rem;
+}
+
+.book-detail-body {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    color: #495057;
+}
+
+.book-detail-link {
+    text-align: right;
+}
+
+.book-detail-link a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.book-detail-link a:hover {
+    text-decoration: underline;
+}
+
+/* コントロール部分のスタイル */
+.books-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+}
+
+.search-container {
+    flex: 1;
+}
+
+.search-input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.view-controls {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.view-btn {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ced4da;
+    background-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+    font-size: 0.9rem;
+}
+
+.view-btn:hover {
+    background-color: #e9ecef;
+}
+
+.view-btn.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+/* 本のリスト表示エリア */
+.books-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* カテゴリ別表示のスタイル */
+.book-category-section {
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.category-header {
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 1rem;
+    border-bottom: 1px solid #e9ecef;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #495057;
+}
+
+.book-category-section .books-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+/* ステータス別表示のスタイル */
+.book-status-section {
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+    margin-bottom: 1rem;
+}
+
+.status-header {
+    margin: 0;
+    padding: 1rem;
+    border-bottom: 1px solid #e9ecef;
+    font-size: 1.25rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.status-icon {
+    font-size: 1.5rem;
+}
+
+.book-count {
+    font-size: 0.9rem;
+    font-weight: normal;
+    color: #6c757d;
+    margin-left: auto;
+}
+
+.book-status-section .books-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+/* 個別の本の表示スタイル */
+.book-item {
+    border: 1px solid #e9ecef;
+    border-radius: 6px;
+    padding: 1rem;
+    background-color: white;
+    transition: box-shadow 0.15s ease-in-out;
+}
+
+.book-item:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.book-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.75rem;
+    gap: 1rem;
+}
+
+.book-title {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #212529;
+    line-height: 1.3;
+    flex: 1;
+}
+
+.book-status {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+/* 読書ステータス別の色分け */
+.status-read {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.status-reading {
+    background-color: #d1ecf1;
+    color: #0c5460;
+    border: 1px solid #bee5eb;
+}
+
+.status-partially-read {
+    background-color: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeaa7;
+}
+
+.status-unread {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.book-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    margin-bottom: 0.75rem;
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.book-category {
+    font-weight: 500;
+    color: #495057;
+}
+
+.book-when, .book-isbn {
+    font-size: 0.8rem;
+}
+
+.book-body {
+    margin-bottom: 0.75rem;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #495057;
+}
+
+.book-link {
+    text-align: right;
+}
+
+.book-link a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.book-link a:hover {
+    text-decoration: underline;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+    .books-controls {
+        flex-direction: column;
+    }
+    
+    .genre-list {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+    
+    .category-list {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+    
+    .book-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .book-item .book-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .book-item .book-status {
+        align-self: flex-start;
+    }
+    
+    .modal-content {
+        margin: 10% auto;
+        padding: 1.5rem;
+        width: 95%;
+    }
+    
+    .book-detail-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .books-controls {
+        padding: 0.75rem;
+    }
+    
+    .genre-item,
+    .category-item,
+    .book-item {
+        padding: 0.75rem;
+    }
+    
+    .selection-section h3 {
+        font-size: 1.3rem;
+    }
+    
+    .genre-item h4 {
+        font-size: 1.1rem;
+    }
+    
+    .category-item h4 {
+        font-size: 1rem;
+    }
+    
+    .modal-content {
+        margin: 5% auto;
+        padding: 1rem;
+        width: 98%;
+    }
+    
+    .book-detail-header h2 {
+        font-size: 1.3rem;
+    }
+}
