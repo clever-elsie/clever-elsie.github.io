@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>archive | Clever Elsie Portfolio</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <div id="header"></div>
+  <main>
+    <section>
+      <h2>archive</h2>
+      <p>
+        home-server system。C++23 と CrowCpp/nginx を用いたミニマルな自宅サーバー用アーカイブ＆ビューア/メモシステム。JWT 認証と JSON ストレージ、OpenSSL によるハッシュ化などを採用しています。
+      </p>
+      <ul>
+        <li>主な機能: 画像/動画/音声/テキストの閲覧、タグ付け、検索、メモ管理、ユーザー管理</li>
+        <li>技術: C++23、CrowCpp、nginx、OpenSSL、フロントは HTML/CSS/JS</li>
+        <li>ライセンス: MIT</li>
+        <li>GitHub: <a href="https://github.com/clever-elsie/archive" target="_blank">clever-elsie/archive</a></li>
+      </ul>
+      <h3>注意事項</h3>
+      <ul>
+        <li>初回ユーザー作成は誰でも可、初回は自動で管理者権限</li>
+        <li>データは users.json に保存、パスワードはソルト付ハッシュ</li>
+        <li>nginx 設定で公開パス制御（web/ と src/frontend/ のみ）</li>
+      </ul>
+      <h3>構成</h3>
+      <pre><code>archive/
+├── includes/ ... マネージャやアプリのヘッダ
+├── src/frontend/ ... Viewer/Memo のフロント
+├── src/server/ ... Crow ベースのサーバ
+├── web/ ... 画面 (index, viewer, memo, user_register)
+└── config/ ... systemd, nginx, param.json など
+</code></pre>
+    </section>
+  </main>
+  <div id="footer"></div>
+  <script src="/assets/include.js"></script>
+</body>
+</html>
