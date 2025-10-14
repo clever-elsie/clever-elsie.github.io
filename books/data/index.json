@@ -299,7 +299,11 @@
     {
       "id": 75,
       "filename": "075_インタフェース2025_11最新CPUQA100.json"
+    },
+    {
+      "id": 76,
+      "filename": "076_実践Rustプログラミング入門第二版.json"
     }
   ],
-  "total": 75
+  "total": 76
 }
