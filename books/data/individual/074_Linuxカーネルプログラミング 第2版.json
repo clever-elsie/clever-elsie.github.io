@@ -3,8 +3,8 @@
   "isbn": "978-4-8144-0110-9",
   "link": "https://www.oreilly.co.jp/books/9784814401109/",
   "when": "2025",
-  "is_read": "reading",
-  "body": "",
+  "is_read": "partially_read",
+  "body": "概念としては面白い話が多いけど，別にそこまでLinuxのカーネルに詳しくなっても作ったりしないので，具体的な部分は興味が薄くて目が滑りがち.",
   "genre": "コンピュータサイエンス",
   "category": "OS"
 }
