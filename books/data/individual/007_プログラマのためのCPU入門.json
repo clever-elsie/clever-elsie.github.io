@@ -2,9 +2,10 @@
   "title": "プログラマのためのCPU入門",
   "isbn": "978-4-908686-16-0",
   "link": "https://www.lambdanote.com/products/cpu",
-  "when": "2024/01(大学1年生)",
   "is_read": "read",
   "body": "元々ほとんどのことを知っていた．並列コンピュータ 非定量的アプローチを先に読んでいたので．CPUのことをあまり知らない人には非常におすすめ．",
   "genre": "コンピュータサイエンス",
-  "category": "コンピュータアーキテクチャ"
+  "category": "コンピュータアーキテクチャ",
+  "purchase_date": "",
+  "read_date": "2024/01(大学1年生)"
 }

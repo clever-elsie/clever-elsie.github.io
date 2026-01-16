@@ -2,9 +2,10 @@
   "title": "専門基礎線形代数学",
   "isbn": "978-4-563-01208-3",
   "link": "http://www.baifukan.co.jp/cgi-bin/db/fromjapanbook.pl?ISBN=978-4-563-01208-3",
-  "when": "2023",
   "is_read": "read",
   "body": "線形代数の授業で使った．表現行列とか正直よくわからん．",
   "genre": "数学",
-  "category": "線形代数"
+  "category": "線形代数",
+  "purchase_date": "",
+  "read_date": "2023"
 }

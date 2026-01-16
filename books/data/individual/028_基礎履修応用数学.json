@@ -2,9 +2,10 @@
   "title": "基礎履修応用数学",
   "isbn": "978-4-563-01172-7",
   "link": "http://www.baifukan.co.jp/cgi-bin/db/baifu_new_search.pl?ISBN=4-563-01172-X",
-  "when": "2024",
   "is_read": "read",
   "body": "常微分方程式とラプラス変換についてわかりやすく書かれている．数学の本なので正直好きではない．数学の本ってなんでC++みたいに型が簡単にわからないんですかね？",
   "genre": "数学",
-  "category": "応用数学"
+  "category": "応用数学",
+  "purchase_date": "",
+  "read_date": "2024"
 }

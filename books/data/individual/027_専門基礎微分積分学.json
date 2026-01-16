@@ -2,9 +2,10 @@
   "title": "専門基礎微分積分学",
   "isbn": "978-4-563-01207-6",
   "link": "http://www.baifukan.co.jp/cgi-bin/db/fromjapanbook.pl?ISBN=978-4-563-01207-6",
-  "when": "2023",
   "is_read": "read",
   "body": "微積の授業で使った．大変良い．公式の表が先頭にあって覚えてれば試験解けたんだけど，正直覚えられない．",
   "genre": "数学",
-  "category": "微分積分"
+  "category": "微分積分",
+  "purchase_date": "",
+  "read_date": "2023"
 }

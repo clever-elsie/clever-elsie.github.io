@@ -2,9 +2,10 @@
   "title": "エキスパートCプログラミング",
   "isbn": "",
   "link": "",
-  "when": "",
   "is_read": "unread",
   "body": "",
   "genre": "プログラミング",
-  "category": "C/C++"
+  "category": "C/C++",
+  "purchase_date": "",
+  "read_date": ""
 }

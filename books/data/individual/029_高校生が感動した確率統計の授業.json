@@ -2,9 +2,10 @@
   "title": "高校生が感動した確率統計の授業",
   "isbn": "978-4-569-83619-5",
   "link": "https://www.php.co.jp/books/detail.php?isbn=978-4-569-83619-5",
-  "when": "2022",
   "is_read": "read",
   "body": "高校生の頃，受験勉強とかしてなかったんだけど，これ読んでたので受験の確率問題が簡単だった．",
   "genre": "数学",
-  "category": "確率統計"
+  "category": "確率統計",
+  "purchase_date": "",
+  "read_date": "2022"
 }

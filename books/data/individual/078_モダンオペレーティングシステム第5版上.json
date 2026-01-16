@@ -2,9 +2,10 @@
   "title": "モダンオペレーティングシステム第5版上",
   "isbn": "9784296070992",
   "link": "https://bookplus.nikkei.com/atcl/catalog/25/10/03/02251/",
-  "when": "",
   "is_read": "partially_read",
   "body": "ファイルシステムのところまで読んだ．プロセスが一番楽しく，次にメモリ管理，ファイルシステムまで来るとちょっとダレてくる．個人的な興味の問題だが．以後のIOなどはヘネパタと章単位で交互に読むつもり．",
   "genre": "コンピュータサイエンス",
-  "category": "OS"
+  "category": "OS",
+  "purchase_date": "",
+  "read_date": ""
 }

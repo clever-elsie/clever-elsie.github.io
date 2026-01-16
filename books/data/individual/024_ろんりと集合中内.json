@@ -2,9 +2,10 @@
   "title": "ろんりと集合-中内",
   "isbn": "978-4-535-78641-7",
   "link": "https://nippyo.co.jp/shop/book/5139.html",
-  "when": "2022",
   "is_read": "read",
   "body": "高校生の時に読んだ．集合と命題について初学者向けにわかりやすく書かれている．",
   "genre": "数学",
-  "category": "集合・論理・離散数学"
+  "category": "集合・論理・離散数学",
+  "purchase_date": "",
+  "read_date": "2022"
 }

@@ -2,9 +2,10 @@
   "title": "Computer Architecture: A Quantitative Approach 7th Edition",
   "isbn": "978-0-443-15406-5",
   "link": "https://shop.elsevier.com/books/computer-architecture/hennessy/978-0-443-15406-5",
-  "when": "2025/12",
   "is_read": "reading",
   "body": "",
   "genre": "コンピュータサイエンス",
-  "category": "コンピュータアーキテクチャ"
+  "category": "コンピュータアーキテクチャ",
+  "purchase_date": "2025/12",
+  "read_date": ""
 }

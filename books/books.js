@@ -45,7 +45,8 @@ function createBookElement(book) {
     </div>
     <div class="book-meta">
       <div class="book-category">${book.category}</div>
-      ${book.when ? `<div class="book-when">読了日: ${book.when}</div>` : ''}
+      ${book.read_date ? `<div class="book-when">読了日: ${book.read_date}</div>` : ''}
+      ${book.purchase_date && book.is_read !== 'read' ? `<div class="book-purchase-date">購入日: ${book.purchase_date}</div>` : ''}
       ${book.isbn ? `<div class="book-isbn">ISBN: ${book.isbn}</div>` : ''}
     </div>
     ${book.body ? `<div class="book-body">${book.body}</div>` : ''}
@@ -267,7 +268,7 @@ async function loadBooksFromIndex() {
           console.error(`Failed to load book: ${bookInfo.filename}`, error);
           return { // エラーの場合は空のデータで表示
             title: `読み込みエラー: ${bookInfo.filename}`,
-            isbn: "", link: "", when: "", is_read: "unread",
+            isbn: "", link: "", purchase_date: "", read_date: "", is_read: "unread",
             body: "この本のデータを読み込めませんでした。",
             genre: "その他", category: "その他"
           };
@@ -380,7 +381,8 @@ function displayBooks(books) {
         </span>
       </div>
       <div class="book-meta">
-        ${book.when ? `<div class="book-when">読了日: ${book.when}</div>` : ''}
+        ${book.read_date ? `<div class="book-when">読了日: ${book.read_date}</div>` : ''}
+        ${book.purchase_date && book.is_read !== 'read' ? `<div class="book-purchase-date">購入日: ${book.purchase_date}</div>` : ''}
         ${book.isbn ? `<div class="book-isbn">ISBN: ${book.isbn}</div>` : ''}
       </div>
     `;
@@ -410,7 +412,8 @@ function showBookDetail(book) {
     <div class="book-detail-meta">
       <div class="book-detail-category">カテゴリ: ${book.category}</div>
       <div class="book-detail-genre">ジャンル: ${book.genre}</div>
-      ${book.when ? `<div class="book-detail-when">読了日: ${book.when}</div>` : ''}
+      ${book.read_date ? `<div class="book-detail-when">読了日: ${book.read_date}</div>` : ''}
+      ${book.purchase_date ? `<div class="book-detail-purchase-date">購入日: ${book.purchase_date}</div>` : ''}
       ${book.isbn ? `<div class="book-detail-isbn">ISBN: ${book.isbn}</div>` : ''}
     </div>
     ${book.body ? `<div class="book-detail-body">${book.body}</div>` : ''}

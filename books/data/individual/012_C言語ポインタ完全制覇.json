@@ -2,9 +2,10 @@
   "title": "C言語ポインタ完全制覇",
   "isbn": "978-4-7741-9381-6",
   "link": "https://gihyo.jp/book/2017/978-4-7741-9381-6",
-  "when": "2021",
   "is_read": "read",
   "body": "補足とかコラムとかが一番おいしい．エキスパートCプログラミングとか持ってないならこれとても良いです．",
   "genre": "プログラミング",
-  "category": "C/C++"
+  "category": "C/C++",
+  "purchase_date": "",
+  "read_date": "2021"
 }

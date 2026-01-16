@@ -2,9 +2,10 @@
   "title": "Exercise C++",
   "isbn": "978-4-7981-9019-8",
   "link": "https://www.shoeisha.co.jp/book/detail/9784798190198",
-  "when": "2025",
   "is_read": "read",
   "body": "C++の小技みたいなのが25個載ってる．C++erに取っては割と常識感あるけど，初心者にはおすすめ．",
   "genre": "プログラミング",
-  "category": "C/C++"
+  "category": "C/C++",
+  "purchase_date": "",
+  "read_date": "2025"
 }

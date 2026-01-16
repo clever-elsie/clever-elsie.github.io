@@ -249,6 +249,11 @@
     font-size: 0.9rem;
 }
 
+.book-detail-when, .book-detail-purchase-date, .book-detail-isbn {
+    font-size: 0.9rem;
+    color: #495057;
+}
+
 .book-detail-body {
     margin-bottom: 1.5rem;
     line-height: 1.6;
@@ -476,7 +481,7 @@
     color: #495057;
 }
 
-.book-when, .book-isbn {
+.book-when, .book-purchase-date, .book-isbn {
     font-size: 0.8rem;
 }
 
