@@ -9,6 +9,19 @@
 <body>
   <div id="header"></div>
   <main>
+    <section id="pages">
+      <h2>ページ一覧</h2>
+      <div class="card-list">
+        <a class="card" href="books/index.html">
+          <h3>読書記録</h3>
+          <p>読んだ(読む予定の)本の記録を管理しています。ジャンル別・読書ステータス別に分類して表示できます。</p>
+        </a>
+        <a class="card" href="repositories/index.html">
+          <h3>リポジトリ一覧</h3>
+          <p>GitHubで公開しているプロジェクトの一覧と詳細情報を表示しています。</p>
+        </a>
+      </div>
+    </section>
     <section id="about">
       <h2>自己紹介</h2>
       <p>
@@ -26,18 +39,43 @@
         <li>GitHub: <a href="https://github.com/clever-elsie" target="_blank">clever-elsie</a></li>
         <li>AtCoder: <a href="https://atcoder.jp/users/CleverElsie" target="_blank">CleverElsie</a>（水色，最近はほぼやってない）</li>
       </ul>
+      <h3>持ってる計算機</h3>
+      <ul>
+        <li>自作PC1: Core i5-11400, DDR4-24GB, 自作PC2とPCIe x1 1Gbps接続</li>
+        <li>自作PC2: Xeon E5-2650v4 デュアルソケット, DDR4-128GB, RTX3060-12GB</li>
+        <li>ノートパソコン: Core i7-1250U, DDR4-16GB</li>
+      </ul>
+      <div class="image-gallery">
+        <figure class="image-item">
+          <img src="assets/img/自作PC1.jpg" alt="自作PC1">
+          <figcaption>自作PC1．CPUクーラーがデカすぎて蓋が閉まらない</figcaption>
+        </figure>
+        <figure class="image-item">
+          <img src="assets/img/自作PC2.jpg" alt="自作PC2">
+          <figcaption>自作PC2．見ての通り段ボールに鎮座</figcaption>
+        </figure>
+        <figure class="image-item">
+          <img src="assets/img/デスクトップ環境.jpg" alt="デスクトップ環境">
+          <figcaption>デスクトップ環境</figcaption>
+        </figure>
+      </div>
     </section>
-    <section id="pages">
-      <h2>ページ一覧</h2>
-      <div class="card-list">
-        <a class="card" href="books/index.html">
-          <h3>読書記録</h3>
-          <p>読んだ(読む予定の)本の記録を管理しています。ジャンル別・読書ステータス別に分類して表示できます。</p>
-        </a>
-        <a class="card" href="repositories/index.html">
-          <h3>リポジトリ一覧</h3>
-          <p>GitHubで公開しているプロジェクトの一覧と詳細情報を表示しています。</p>
-        </a>
+    <section id="books">
+      <h2>本棚など</h2>
+      読んだか読んでないかは<a href="books/index.html">知る人ぞ知る</a>．
+      <div class="image-gallery">
+        <figure class="image-item">
+          <img src="assets/img/本棚1.jpg" alt="本棚1">
+          <figcaption>本棚1</figcaption>
+        </figure>
+        <figure class="image-item">
+          <img src="assets/img/本棚2.jpg" alt="本棚2">
+          <figcaption>本棚2</figcaption>
+        </figure>
+        <figure class="image-item">
+          <img src="assets/img/積読.jpg" alt="積読">
+          <figcaption>積読</figcaption>
+        </figure>
       </div>
     </section>
   </main>
