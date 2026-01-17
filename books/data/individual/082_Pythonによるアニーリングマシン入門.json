@@ -2,10 +2,10 @@
   "title": "Pythonによるアニーリングマシン入門",
   "isbn": "9784320036369",
   "link": "https://www.kyoritsu-pub.co.jp/book/b10134055.html",
-  "is_read": "unread",
-  "body": "",
+  "is_read": "read",
+  "body": "QUBOの説明と定式化について，さらに様々な問題の定式化が簡単で分かりやすいが，数式は行間がちょっと広め．Pythonのプログラムは読みやすくはない．商用量子コンピュータの使い方も書いているが，多分使わない",
   "genre": "数学",
   "category": "応用数学",
-  "purchase_date": "2026/1",
-  "read_date": ""
+  "purchase_date": "2026/1/16",
+  "read_date": "2026/1/18"
 }
