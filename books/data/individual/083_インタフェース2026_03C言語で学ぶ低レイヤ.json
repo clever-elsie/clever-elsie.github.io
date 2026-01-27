@@ -2,10 +2,10 @@
   "title": "インタフェース2026_03C言語で学ぶ低レイヤ",
   "isbn": "9784320036369",
   "link": "https://interface.cqpub.co.jp/magazine/202603/",
-  "is_read": "unread",
-  "body": "",
+  "is_read": "read",
+  "body": "ヘネパタやnand2tetris本が分厚すぎるので，要点がよくまとまっているこの本の前半部分は初心者向けに非常によいと感じた．後半部分は特に最適化については非常に役に立つ良い本である．",
   "genre": "コンピュータサイエンス",
   "category": "コンピュータアーキテクチャ",
   "purchase_date": "2026/1/26",
-  "read_date": ""
+  "read_date": "2026/1/27"
 }
