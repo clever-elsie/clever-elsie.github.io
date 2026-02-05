@@ -1,9 +1,9 @@
 {
   "title": "分散システムのためのデザインパターン",
-  "isbn": "",
-  "link": "",
-  "is_read": "reading",
-  "body": "",
+  "isbn": "9784621311523",
+  "link": "https://www.maruzen-publishing.co.jp/book/b10134955.html",
+  "is_read": "read",
+  "body": "非同期処理の暗黙のミスに対処するための手法を，そのミスの理由と共に簡潔に解説している．",
   "genre": "コンピュータサイエンス",
   "category": "分散システム・検索",
   "purchase_date": "",
